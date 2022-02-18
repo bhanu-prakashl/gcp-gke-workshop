@@ -86,9 +86,8 @@ steps:
       "--images", "npm-app=${_JFROG_SERVER_NAME}/${_JFROG_REPO_NAME}/npm-app:${COMMIT_SHA}",
       "--source", "workshop-app"
     ]
-
 availableSecrets:
   secretManager:
-  - versionName:projects/939317586436/secrets/jfrog-access-token/versions/1
-    env:'JFROG_ACCESS_TOKEN'
+  - versionName: projects/939317586436/secrets/jfrog-access-token/versions/1
+    env: 'JFROG_ACCESS_TOKEN'
     
